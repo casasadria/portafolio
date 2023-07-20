@@ -1,51 +1,46 @@
+/* Estilos para el componente App */
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar horizontalmente el contenido */
+  min-height: 100vh; /* Ajustar el valor de altura mínima para ocupar toda la ventana */
+  background-color: #282c34;
+  color: white;
+}
+
+.App-header {
+  padding: 20px 0; /* Agregar espaciado superior e inferior al encabezado */
+  text-align: center; /* Centrar horizontalmente el contenido del encabezado */
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0; /* Eliminar el margen superior e inferior del título */
 }
 
 .App-logo {
-  position: absolute;
-  top: 10px;
-  left: 10px;
   height: 40px;
   width: auto;
   pointer-events: none;
 }
 
-/* Positioning the title on the top left corner of the page */
-h1 {
-  position: absolute;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  margin-bottom: 2rem;
-  position: absolute;
-  margin-top: 5%;
-  text-align: center;
-  
-  transform: translate(-50%, -50%);
+/* Resto de los estilos existentes... */
+
+
+.App-link {
+  color: #61dafb;
 }
+
+/* Resto de los estilos existentes... */
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 10vh; /* Ajusta el valor de altura aquí */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -57,28 +52,3 @@ h1 {
   }
 }
 
-/* Estilos para las secciones adicionales */
-
-.about-me {
-  background-color: #222;
-  color: #fff;
-  padding: 20px;
-  margin-bottom: 30px;
-}
-
-.projects {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  margin-bottom: 30px;
-}
-
-.project {
-  margin-bottom: 20px;
-}
-
-.contact {
-  background-color: #444;
-  color: #fff;
-  padding: 20px;
-}
