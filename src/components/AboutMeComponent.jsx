@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./css/AboutMeComponent.css"; // Importamos el archivo CSS para el componente
+import "../css/AboutMeComponent.css"; // Importamos el archivo CSS para el componente
 
-export function AboutMeComponent() {
+export default function AboutMeComponent() {
   const [showFullText, setShowFullText] = useState(false);
 
   const toggleTextVisibility = () => {
@@ -26,14 +26,7 @@ export function AboutMeComponent() {
           como Firebase y AWS en proyectos de menor escala, así como integrar diferentes API's en mis aplicaciones.
           Es importante destacar que mi objetivo es seguir estudiando mientras trabajo, ya que estoy comprometido a
           seguir desarrollándome profesionalmente y ampliando mis capacidades como desarrollador.
-          <br />
-          <br />
-          ¡Un ejemplo que puedo mostrar de una aplicación que hemos desarrollado en equipo, LearnTrack, pueden visitar
-          la página web del mismo <a href="https://www.learntrack.cat" target="_blank" rel="noopener noreferrer">learntrack.cat</a>donde he programado toda la lógica del aplicativo! ¡El
-          Sábado día 10 de Junio del 2023, fuimos ganadores del premio de mSchools al presentarnos a la modalidad App
-          Education! Y BBDD domino tanto SQL/NoSQL como sistemas de bases de datos, he utilizado MySQL como Microsoft
-          SQL Server como PostgreSQL, en el apartado de NoSQL he utilizado más Firebase, pero tengo experiencia en
-          MongoDB.
+        
           <br />
           <br />
           Estoy entusiasmado por la posibilidad de unirme a su equipo y contribuir con mis habilidades y conocimientos

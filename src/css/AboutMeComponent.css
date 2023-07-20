@@ -6,13 +6,14 @@
   border-radius: 5px;
   background-color: #222;
   color: #fff;
-  max-height: 100%; /* Altura máxima para permitir el ajuste automático */
-  overflow: hidden; /* Oculta el contenido que excede la altura */
   transition: max-height 0.3s ease; /* Transición suave de la altura al expandirse o colapsarse */
   margin-bottom: 30px; /* Espacio inferior entre el componente AboutMeComponent y el componente MainComponent */
 }
 
 .about-text {
+  /* Estilos del contenedor del texto */
+  max-width: 700px; /* Establece un ancho máximo para el contenedor */
+  overflow: hidden; /* Oculta el contenido que supere el ancho máximo */
   cursor: pointer; /* Cambia el cursor al pasar el ratón sobre el texto */
   line-height: 1.5; /* Altura de línea del texto */
   margin-bottom: 20px; /* Espacio inferior entre los párrafos del texto */
@@ -21,6 +22,7 @@
 .about-text.expanded {
   /* Estilos cuando el texto está expandido */
   white-space: normal; /* Muestra todo el texto sin cortar */
+  max-height: 100%; /* Altura máxima del texto */
 }
 
 .read-more {

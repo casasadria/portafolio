@@ -1,18 +1,69 @@
-/* Estilos para las secciones adicionales */
 .projects {
-    text-align: justify; /* Centrar horizontalmente el contenido */
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
-    margin-bottom: 30px;
-  }
+  /* Estilo para la sección de proyectos */
+  text-align: justify;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  width: 700px;
+}
+
+.projects-container {
+  /* Estilo para el contenedor de los proyectos */
+  display: flex;
+  overflow-x: hidden;
+  margin: 50px;
+}
+
+.arrow-container {
+  /* Estilo para el contenedor de las flechas */
+  position: relative;
+  width: 100%;
+  display: flex;
   
-  .project {
-    margin-bottom: 20px;
-    padding-bottom: 10px; /* Espacio inferior entre los proyectos en dispositivos móviles */
-  }
+  justify-content: space-between;
+}
+
+.arrow {
+  /* Estilo para cada flecha */
+  cursor: pointer;
+  font-size: 40px;
+  color: #fff;
+}
+
+/* Estilo para la flecha izquierda */
+.left {
+  margin-left: 0; /* Alineamos la flecha con el borde izquierdo */
+}
+
+/* Estilo para la flecha derecha */
+.right {
+  margin-right: 0; /* Alineamos la flecha con el borde derecho */
+}
+
+.project {
+  /* Estilos por defecto del proyecto */
+  flex: 0 0 100%;
+  margin-right: 20px;
+  transition: transform 0.3s ease-out;
+  
+  padding-right: 20px;
+}
+
+/* Estilo cuando el ratón pasa por encima del proyecto 
+.project:hover {
+  transform: translateX(20px);
+}*/
+
+/* Último proyecto, elimina el margen derecho para evitar espacio adicional */
+.project:last-child {
+  margin-right: 0;
+}
+
   
   .contact {
     background-color: #444;
