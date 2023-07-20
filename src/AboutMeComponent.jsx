@@ -29,7 +29,7 @@ export function AboutMeComponent() {
           <br />
           <br />
           ¡Un ejemplo que puedo mostrar de una aplicación que hemos desarrollado en equipo, LearnTrack, pueden visitar
-          la página web del mismo <a href="https://www.learntrack.cat" target="_blank" rel="noopener noreferrer">learntrack.cat</a> donde he programado toda la lógica del aplicativo! ¡El
+          la página web del mismo <a href="https://www.learntrack.cat" target="_blank" rel="noopener noreferrer">learntrack.cat</a>donde he programado toda la lógica del aplicativo! ¡El
           Sábado día 10 de Junio del 2023, fuimos ganadores del premio de mSchools al presentarnos a la modalidad App
           Education! Y BBDD domino tanto SQL/NoSQL como sistemas de bases de datos, he utilizado MySQL como Microsoft
           SQL Server como PostgreSQL, en el apartado de NoSQL he utilizado más Firebase, pero tengo experiencia en

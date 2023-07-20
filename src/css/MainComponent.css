@@ -1,8 +1,6 @@
 /* Estilos para las secciones adicionales */
-  .projects {
-    margin-top: 30px; /* Espacio entre la sección de proyectos y la sección de contacto */
+.projects {
     text-align: justify; /* Centrar horizontalmente el contenido */
-    max-width: 600px; /* Ancho máximo para el componente */
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -13,81 +11,17 @@
   
   .project {
     margin-bottom: 20px;
+    padding-bottom: 10px; /* Espacio inferior entre los proyectos en dispositivos móviles */
   }
   
   .contact {
     background-color: #444;
     color: #fff;
     padding: 20px;
-  }
-  
-  /* Estilos generales para los enlaces */
-  a {
-    color: #007bff; /* Color del texto del enlace */
-    text-decoration: none; /* Elimina el subrayado por defecto */
-    padding: 5px; /* Espacio alrededor del enlace */
-    display: inline-block; /* Hace que los enlaces se muestren en línea */
-    margin-right: 10px; /* Espacio entre enlaces */
-  }
-  
-  /* Estilo al pasar el ratón por encima del enlace */
-  a:hover {
-    text-decoration: underline; /* Subrayado al pasar el ratón por encima */
-  }
-  
-  /* Estilo para los enlaces abiertos en una nueva pestaña */
-  a[target="_blank"]::after {
-    content: " (Nueva pestaña)"; /* Agrega un texto después del enlace */
-    font-size: 12px;
-    color: #aaa;
-  }
-  
-  /* Estilo para los enlaces en la sección de proyectos */
-  .projects a {
-    color: #ff5722; /* Cambia el color de los enlaces en la sección de proyectos */
-  }
-  
-  /* Estilos para los logos de redes sociales */
-  .logos_social {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logos_social img {
-    width: 30px; /* Ancho de las imágenes de los logos */
-    margin-right: 5px; /* Espacio entre la imagen y el texto del enlace */
-  }
-  
-  /* Estilos para los enlaces de redes sociales */
-  .logos_social a {
-    color: #007bff; /* Color del texto del enlace */
-    text-decoration: none; /* Elimina el subrayado por defecto */
-    display: flex;
-    align-items: center;
-    margin-right: 10px; /* Espacio entre enlaces */
-  }
-  
-  /* Estilo al pasar el ratón por encima del enlace */
-  .logos_social a:hover {
-    text-decoration: underline; /* Subrayado al pasar el ratón por encima */
-  }
-  
-  /* Estilo para los enlaces abiertos en una nueva pestaña */
-  .logos_social a[target="_blank"]::after {
-    content: " (Nueva pestaña)"; /* Agrega un texto después del enlace */
-    font-size: 12px;
-    color: #aaa;
-  }
-  
-  /* Estilos para la sección de contacto */
-  .contact {
-    margin-top: 20px; /* Espacio entre la sección de proyectos y la sección de contacto */
     text-align: center; /* Centrar horizontalmente el contenido */
-    max-width: 600px; /* Ancho máximo para el componente */
-    margin: 0 auto; /* Centrar el componente horizontalmente */
-    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-bottom: 30px; /* Espacio entre la sección de proyectos y la sección de contacto */
   }
   
   .contact h2 {
@@ -147,3 +81,4 @@
   .rotateOnHover:hover img {
     transform: rotate(360deg); /* Rotación de 360 grados al pasar el ratón por encima */
   }
+  

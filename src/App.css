@@ -6,6 +6,7 @@
   min-height: 100vh; /* Ajustar el valor de altura mínima para ocupar toda la ventana */
   background-color: #282c34;
   color: white;
+  padding: 20px; /* Agregar espaciado alrededor del contenido */
 }
 
 .App-header {
@@ -29,12 +30,38 @@ h1 {
 
 /* Resto de los estilos existentes... */
 
-
 .App-link {
   color: #61dafb;
 }
 
 /* Resto de los estilos existentes... */
+
+/* Añadir estilos para el pie de página (footer) */
+footer {
+  margin-top: 20px; /* Espacio entre el contenido principal y el pie de página */
+  text-align: center; /* Centrar horizontalmente el contenido del pie de página */
+  color: #fff;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 5px 0; /* Espaciado entre los párrafos del pie de página */
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem; /* Reducir el tamaño del título en dispositivos móviles */
+  }
+
+  .App-logo {
+    height: 30px; /* Reducir el tamaño del logo en dispositivos móviles */
+  }
+
+  footer {
+    font-size: 12px; /* Reducir el tamaño del texto del pie de página en dispositivos móviles */
+  }
+}
 
 
 @media (prefers-reduced-motion: no-preference) {

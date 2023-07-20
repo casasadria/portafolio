@@ -36,7 +36,7 @@ export default function MainComponent() {
             </a>
           </li>
           <li>
-            Teléfono: <a href={`tel:${638278415}`}>{638278415}</a>
+            Teléfono: <a href={`tel:${"+34 638278415"}`}>{638278415}</a>
           </li>
         </ul>
         <div className="logos_social">

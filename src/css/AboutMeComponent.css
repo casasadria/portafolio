@@ -1,53 +1,64 @@
 /* Estilos para el componente AboutMeComponent */
-
 .about-me {
-    max-width: 600px; /* Ancho máximo para el componente */
-    margin: 0 auto; /* Centrar el componente horizontalmente */
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #222;
-    color: #fff;
-    text-align: justify; /* Centrar horizontalmente el contenido */
-    
+  text-align: justify; /* Centrar horizontalmente el contenido */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #222;
+  color: #fff;
+  max-height: 100%; /* Altura máxima para permitir el ajuste automático */
+  overflow: hidden; /* Oculta el contenido que excede la altura */
+  transition: max-height 0.3s ease; /* Transición suave de la altura al expandirse o colapsarse */
+  margin-bottom: 30px; /* Espacio inferior entre el componente AboutMeComponent y el componente MainComponent */
+}
+
+.about-text {
+  cursor: pointer; /* Cambia el cursor al pasar el ratón sobre el texto */
+  line-height: 1.5; /* Altura de línea del texto */
+  margin-bottom: 20px; /* Espacio inferior entre los párrafos del texto */
+}
+
+.about-text.expanded {
+  /* Estilos cuando el texto está expandido */
+  white-space: normal; /* Muestra todo el texto sin cortar */
+}
+
+.read-more {
+  font-weight: bold;
+  color: #007bff; /* Color azul para el texto "Leer Más" */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón sobre "Leer Más" */
+}
+
+.read-more:hover {
+  text-decoration: underline; /* Subrayado al pasar el ratón sobre "Leer Más" */
+}
+
+/* Estilos generales para los enlaces */
+a {
+  color: #007bff; /* Color del texto del enlace */
+  text-decoration: none; /* Elimina el subrayado por defecto */
+  padding: 5px; /* Espacio alrededor del enlace */
+  display: inline-block; /* Hace que los enlaces se muestren en línea */
+}
+
+/* Estilo al pasar el ratón por encima del enlace */
+a:hover {
+  text-decoration: underline; /* Subrayado al pasar el ratón por encima */
+}
+
+/* Estilo para los enlaces abiertos en una nueva pestaña */
+a[target="_blank"]::after {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .about-me {
+    padding: 10px; /* Reducir el espaciado en dispositivos móviles */
   }
-  
+
   .about-text {
-    cursor: pointer; /* Cambia el cursor al pasar el ratón sobre el texto */
-    line-height: 1.5; /* Altura de línea del texto */
+    line-height: 1.6; /* Aumentar la altura de línea en dispositivos móviles */
   }
-  
-  .about-text.expanded {
-    /* Estilos cuando el texto está expandido */
-    white-space: normal; /* Muestra todo el texto sin cortar */
-  }
-  
-  .read-more {
-    font-weight: bold;
-    color: #007bff; /* Color azul para el texto "Leer Más" */
-    cursor: pointer; /* Cambia el cursor al pasar el ratón sobre "Leer Más" */
-  }
-  
-  .read-more:hover {
-    text-decoration: underline; /* Subrayado al pasar el ratón sobre "Leer Más" */
-  }
-  
-   /* Estilos generales para los enlaces */
-   a {
-    color: #007bff; /* Color del texto del enlace */
-    text-decoration: none; /* Elimina el subrayado por defecto */
-    padding: 5px; /* Espacio alrededor del enlace */
-    display: inline-block; /* Hace que los enlaces se muestren en línea */
-    margin-right: 10px; /* Espacio entre enlaces */
-  }
-  
-  /* Estilo al pasar el ratón por encima del enlace */
-  a:hover {
-    text-decoration: underline; /* Subrayado al pasar el ratón por encima */
-  }
-  
-  /* Estilo para los enlaces abiertos en una nueva pestaña */
-  a[target="_blank"]::after {
-    font-size: 12px;
-    color: #aaa;
-  }
+}
